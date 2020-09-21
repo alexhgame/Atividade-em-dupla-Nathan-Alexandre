@@ -1,0 +1,134 @@
+<html>
+    <head>
+        <meta http-equiv= "content-type" content="text/html; charset=utf-8"/>
+        <title>Sorteio</title>
+
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+    </head>
+    <!-- <body bgcolor="PowderBlue" align="center"> -->
+    <body>
+        <h2>Sorteio de PC GAMER Patrocinado pelo GITHUB</h2>
+        
+        <form action="enviar.php" method="POST" name="CadastroCliente">
+            <!-- <table border="0" cellpadding="5" align="center"> -->
+            <table cellpadding="5">
+                <tr>
+                    <td>
+                        <label for="nome"> Nome Completo: </label>
+                    </td>
+                    <td>
+                        <input type="text" id="nome" name="nome" size="40" maxlength="30" placeholder= "Digite seu nome"/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label>E-mail:</label>
+                    </td>
+                    <td>
+                        <input type="email" id="email" size="40" maxlength="30" placeholder="Digite seu e-mail"/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label>Telefone de Contato:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="tel" name="tel" size="40" maxlength="15" placeholder="Digite seu numero com DDD"/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="senha">Senha:</label>
+                    </td>
+                    <td>
+                        <input type="password" id="senha" name="senha" size="40" maxlength="10" placeholder="Digite a senha max 10 Caracteres."/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="senha">Confirme a Senha:</label>
+                    </td>
+                    <td>
+                        <input type="password" id="senha" name="senha" size="40" maxlength="10" placeholder="Digite a senha max 10 Caracteres."/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="data">Data de Nascimento:</label>
+                    </td>
+                    <td>
+                        <input type="date" id="data" name="data"/>
+                    </td>
+                </tr>
+                <tr>
+                    
+
+                </tr>
+                <tr>
+                    <td>
+                        <label>Receba Promoções no E-mail:</label>
+                    </td>
+                    <td>
+                        <input type="radio" id="opt" name="opt" value="Sim"/>
+                        <label for="opt">Sim</label>
+                        <input type="radio" id="opt" name="opt" value="Nao"/>
+                        <label for="opt">Não</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label>Qual seu Genero:</label>
+                    </td>
+                    <td>
+                        <input type="radio" id="genero" name="genero" value="Masculino"/>
+                        <label for="genero">Masculino</label>
+                        <input type="radio" id="genero" name="genero" value="Feminino"/>
+                        <label for="genero">Feminino</label>
+                        <input type="radio" id="genero" name="genero" value="outros"/>
+                        <label for="genero">Outros</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Estado:</label>
+                    </td>
+                    <td>
+                        <select id="estado" name="estado">
+                            <option value="" selected="selected">//Selecione//</option>
+                           
+                                <option value="MG">Minas Gerais</option>   
+                                <option value="SP">São Paulo</option>   
+                                <option value="RJ">Rio de Janeiro</option>   
+                                <option value="ES">Espírito Santo</option>
+                                <option value="BA">Bahia</option>   
+                                <option value="PE">Pernambuco</option>   
+                                <option value="CE">Ceará</option>   
+                            </optgroup>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="coment">Comentário:</label>
+                    </td>
+                    <td>
+                        <textarea cols="40" rows="10" id="coment" name="coment" placeholder="Deixe um recado!!!"></textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>
+                        <input type="submit" id="enviar" name="enviar" value="ENVIAR"/>
+                        <input type="reset" id="limpar" name="limpar" value="LIMPAR"/>
+                    </th>
+                </tr>
+            </table>
+        </form>
+        <iframe src="img\github-octocat.png" align="center" height="630" width= "1200"></iframe>
+    </body>
+</html>
